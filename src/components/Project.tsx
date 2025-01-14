@@ -16,14 +16,14 @@ export default function Project({ imageURL, imageAlt, isImageFirst, title, date,
         height={0} 
         alt={imageAlt}
         className={`rounded-lg order-first ${isImageFirst ? "" : "lg:order-last"}`}
+        priority={true}
       />
       <div className="flex flex-col gap-3 justify-around">
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-2">
           <div className="flex text-accent text-4xl font-display font-medium">{title}</div>
-          <div className="font-display text-neutral-400 italic">{date}</div>
+          <div className="font-display text-neutral-400 text-sm italic">{date}</div>
           <div>{desc}</div>
-          <div className="flex gap-2 text-sm italic">{skillsString}
-          </div>
+          <div className="flex gap-2 text-sm italic">{skillsString}</div>
         </div>
         <Link href={url} className="flex gap-1 items-center w-fit px-4 py-1 rounded-lg border-2 border-accent text-accent hover:bg-accent hover:text-neutral-800 duration-300">{<ArrowUpRight size={16}/>} More Info</Link>
       </div>

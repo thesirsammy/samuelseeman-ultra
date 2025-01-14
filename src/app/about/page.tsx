@@ -4,6 +4,7 @@ import { Magnetic } from "@/components/ui/magnetic";
 import { TextLoop } from "@/components/ui/text-loop"
 import Image from "next/image"
 import "../globals.css"
+import { AnimatedGroup } from "@/components/ui/animated-group";
 
 export default function Page() {
   return (
@@ -37,7 +38,7 @@ export default function Page() {
         <br /><p>That experience inspired me to love learning for its own sake–I discovered that I had interests 
           and passions I cared about, not just ones that were thrown at me in school. That introduction with programming got he hooked, and
           led me to pursue a degree in Computer Engineering.</p>
-        <div className="flex justify-center gap-5 items-center my-4 group">
+        <AnimatedGroup className="flex justify-center gap-5 items-center my-4 group" preset="scale">
           <Magnetic>
             <Image draggable={false} src="/about/suit.jpg" width={180} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-xl hover:cursor-grab hover:-rotate-3 hover:-translate-x-4 duration-300"/>
           </Magnetic>
@@ -47,7 +48,7 @@ export default function Page() {
           <Magnetic>
             <Image draggable={false} src="/about/theater.jpg" width={160} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-xl hover:cursor-grab hover:rotate-3 hover:translate-x-4 duration-300"/>
           </Magnetic>
-        </div>
+        </AnimatedGroup>
         <p>Outside of the classroom and coding, I follow a wide variety of activities such as theater, graphic design, 
           politics, paddleboarding, and photography. I think this range of interests reflects the fact that always I try to be a 
           well-rounded person, pursuing many different areas of interest at once.</p><br />
