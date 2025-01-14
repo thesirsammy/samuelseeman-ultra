@@ -3,6 +3,7 @@ import { Funnel_Display, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Dock from "@/components/Dock";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const funnelDisplay = Funnel_Display({
@@ -26,6 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+
     <html lang="en">
       <body
         className={`${funnelDisplay.variable} ${DMSans.variable} bg-neutral-900 text-white no-scrollbar w-full`}
@@ -35,6 +37,8 @@ export default function RootLayout({
         {children}
 
         <Dock />
+
+        <SpeedInsights />
       </body>
     </html>
   );
