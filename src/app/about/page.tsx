@@ -8,7 +8,7 @@ import { AnimatedGroup } from "@/components/ui/animated-group";
 
 export default function Page() {
   return (
-    <div className="flex justify-center font-body pb-[20vh]">
+    <div className="flex justify-center font-body md:pb-[20vh]">
       <div className="md:mt-32 mt-8 md:max-w-[650px] max-w-[95vw] md:text-[18px] text-[16px]">
         <div className="flex items-end mb-4">
           <div className="font-display text-4xl font-bold text-accent mr-6">About</div>
@@ -24,8 +24,8 @@ export default function Page() {
             <span>photographer</span>
           </TextLoop>
         </div>
-        <p>I'm Samuel Seeman, a student at the University of Alabama studying Computer Engineering. 
-        I'm originally from Ft. Lauderdale, Florida.</p> <br />
+        <p>I&apos;m Samuel Seeman, a student at the University of Alabama studying Computer Engineering. 
+        I&apos;m originally from Ft. Lauderdale, Florida.</p> <br />
         <div className="flex gap-10">
           <p>I started my online journey at the age of 14 when I figured out how to set up my own business after I launched
             <a href="https://savvytechsupport.com" target="_blank" className="text-accent hover:text-accent-hover duration-200"> SavvyTech Support</a>, a small tech support service. This seemingly small task propelled me into the 
@@ -52,7 +52,7 @@ export default function Page() {
         <p>Outside of the classroom and coding, I follow a wide variety of activities such as theater, graphic design, 
           politics, paddleboarding, and photography. I think this range of interests reflects the fact that always I try to be a 
           well-rounded person, pursuing many different areas of interest at once.</p><br />
-        <p>I guess I could be classified as an amature photographer, too. I've been slowly getting deeper into 
+        <p>I guess I could be classified as an amature photographer, too. I&apos;ve been slowly getting deeper into 
           photography–take a look at my photos at my photography website!</p>
       </div>
     </div>

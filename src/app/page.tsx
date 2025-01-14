@@ -7,7 +7,7 @@ import { InView } from "@/components/ui/in-view";
 export default function Home() {
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col items-center justify-center font-body max-w-[768px] h-screen">
+      <div className="md:mt-32 flex flex-col items-center justify-center font-body max-w-[768px]">
         <div className="flex flex-wrap justify-between items-center py-10 px-10 bg-neutral-800 rounded-lg w-full z-10 shadow-xl">
           <InView 
             variants={{
@@ -49,11 +49,11 @@ export default function Home() {
           <a href="mailto:hi@samuelseeman.com" className="flex gap-1 items-center hover:underline duration-200">{<AtSign size={16} className="opacity-0 md:opacity-100"/>} Email</a>
         </div>
 
-        <div className="font-body mt-5 mx-5">
+        <div className="font-body md:text-lg text-md mx-5">
           <p>Studying Computer Engineering, Mathematics, and Business at the University of Alabama.</p>
           <br />
           <p>Learning about circuts and electrical wizardry in class + coding, graphic design, and social media management on my own. 
-            I'm also into photography, frisbee, and theater.</p>
+            I&apos;m also into photography, frisbee, and theater.</p>
             <br />
             <p>Outside of academics, you can find me giving back to my community by joining (and leading) 
               different outreach programs, such as nursing home and youth ministries. Check out my <Link href="/about" className="text-accent hover:text-accent-hover">about</Link> page to learn more.</p>
