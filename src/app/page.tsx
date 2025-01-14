@@ -7,7 +7,7 @@ import { InView } from "@/components/ui/in-view";
 export default function Home() {
   return (
     <div className="flex justify-center">
-      <div className="md:mt-32 flex flex-col items-center justify-center font-body max-w-[768px]">
+      <div className="md:mt-24 flex flex-col items-center justify-center font-body max-w-[768px]">
         <div className="flex flex-wrap justify-between items-center py-10 px-10 bg-neutral-800 rounded-lg w-full z-10 shadow-xl">
           <InView 
             variants={{
@@ -53,10 +53,13 @@ export default function Home() {
           <p>Studying Computer Engineering, Mathematics, and Business at the University of Alabama.</p>
           <br />
           <p>Learning about circuts and electrical wizardry in class + coding, graphic design, and social media management on my own. 
-            I&apos;m also into photography, frisbee, and theater.</p>
-            <br />
-            <p>Outside of academics, you can find me giving back to my community by joining (and leading) 
-              different outreach programs, such as nursing home and youth ministries. Check out my <Link href="/about" className="text-accent hover:text-accent-hover">about</Link> page to learn more.</p>
+            I&apos;m also into photography, frisbee, and theater.
+          </p>
+          <br />
+          <p>Outside of academics, you can find me giving back to my community by joining (and leading) 
+            different outreach programs, such as nursing home and youth ministries. Check out my <Link href="/about" className="text-accent hover:text-accent-hover">about</Link> page to learn more.
+          </p>
+          <div className="md:h-[200px]"></div>
         </div>
       </div>
     </div>

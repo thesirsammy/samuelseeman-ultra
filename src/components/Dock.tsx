@@ -18,7 +18,7 @@ export default function Dock() {
             <Link href="https://photos.samseeman.com" target="_blank" className="hover:bg-neutral-700 hover:rounded-lg duration-300 p-2 group-hover:opacity-50 hover:!opacity-100 hover:scale-105"><Camera size={28} strokeWidth={1.5} /></Link>
           </div>
       </div>
-      <div className="flex justify-center mt-4 text-neutral-500 font-display backdrop-blur-none">Made by Samuel Seeman</div>
+      <div className="flex justify-center mt-4 text-neutral-500 font-display backdrop-blur-none">Samuel Seeman © {new Date().getFullYear()}</div>
     </div>
   )
 }
