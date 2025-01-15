@@ -9,6 +9,7 @@ export default function Page() {
 
         {projects.map((project, index) => (
           <Project 
+            id={project.id}
             key={project.id}
             imageURL={project.imageURL}
             imageAlt={project.imageAlt}

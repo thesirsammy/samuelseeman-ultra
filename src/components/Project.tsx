@@ -1,24 +1,30 @@
 import { ArrowUpRight } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from "next-view-transitions";
 
-export default function Project({ imageURL, imageAlt, isImageFirst, title, date, desc, skills, url}: {imageURL: string, imageAlt: string, isImageFirst: boolean, title: string, date: string, desc: string, skills: Array<string>, url: string}) {
+export default function Project({ id, imageURL, imageAlt, isImageFirst, title, date, desc, skills, url}: {id: string, imageURL: string, imageAlt: string, isImageFirst: boolean, title: string, date: string, desc: string, skills: Array<string>, url: string}) {
   let skillsString = "";
   skills.forEach((skill) => (skillsString += skill + " • "));
   skillsString = skillsString.slice(0, -2);
 
   return (
-    <div className="flex lg:flex-row flex-col gap-8">
-      <Image 
-        draggable={false} 
-        src={imageURL} 
-        width={400} 
-        height={0} 
-        alt={imageAlt}
-        className={`rounded-lg order-first ${isImageFirst ? "" : "lg:order-last"}`}
-        priority={true}
-      />
-      <div className="flex flex-col gap-3 justify-around">
+    <div className={`flex lg:flex-row flex-col gap-8 ${isImageFirst ? "" : "lg:flex-row-reverse"}`}>
+      <div className="w-full lg:w-1/2">
+        <Image 
+          draggable={false} 
+          src={imageURL} 
+          width={500}
+          height={300}
+          alt={imageAlt}
+          className="rounded-lg object-cover w-full"
+          priority={true}
+          style={{ 
+            viewTransitionName: `project-${id}-image`,
+            aspectRatio: '16/9'
+          }}
+        />
+      </div>
+      <div className="flex flex-col gap-3 justify-around w-full lg:w-1/2">
         <div className="flex flex-col gap-2">
           <div className="flex text-accent text-4xl font-display font-medium">{title}</div>
           <div className="font-display text-neutral-400 text-sm italic">{date}</div>

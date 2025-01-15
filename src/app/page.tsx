@@ -6,7 +6,7 @@ import { Magnetic } from "@/components/ui/magnetic";
 export default function Home() {
   return (
     <div className="flex justify-center font-body">
-      <div className="md:my-32 flex flex-col items-center justify-center max-w-[768px]">
+      <div className="md:my-36 flex flex-col items-center justify-center max-w-[768px]">
         <div className="flex flex-wrap gap-6 md:justify-between justify-center items-center py-10 px-10 bg-neutral-800 rounded-lg w-full z-10 shadow-xl">
         
         {/* Optional Image, must comment out or delete video tag if you're using this */}

@@ -27,7 +27,7 @@ export const projects: Project[] = [
         <div>As one of <strong>50</strong> out of <strong>875</strong> college students chosen to represent the Arc Browser on campus, I was tasked with promoting its brand and message here at 
         the University of Alabama. This challenge involved filming, editing, and promoting engaging video adverts; managing the @arc.ual Instagram account;
         and collaborating with the other Arc Ambassadors to effectively reach other students.</div>
-        <a href='https://www.instagram.com/arc.ual/' className="flex gap-1 items-center w-fit px-4 py-1 rounded-lg border-2 border-accent text-accent hover:bg-accent hover:text-neutral-800 duration-300">Visit <ArrowUpRight /></a>
+        <a href='https://www.instagram.com/arc.ual/' target='_blank' className="flex gap-1 items-center w-fit px-4 py-1 rounded-lg border-2 border-accent text-accent hover:bg-accent hover:text-neutral-800 duration-300">Visit <ArrowUpRight /></a>
       </>
     ),
     mediaURLs: [],
@@ -46,7 +46,7 @@ export const projects: Project[] = [
         Over the summer, we created a curriculum from scratch designed to be deployable by any church in the state or nation for implementation into their own
         curriculum lineup, as <strong>quickly</strong> and as <strong>cost-effectively</strong> as possible.
         </div>
-          <a href='https://read.cv/samuelseeman' className="flex gap-1 items-center w-fit px-4 py-1 rounded-lg border-2 border-accent text-accent hover:bg-accent hover:text-neutral-800 duration-300">Visit <ArrowUpRight /></a>
+          <a href='https://read.cv/samuelseeman' target='_blank' className="flex gap-1 items-center w-fit px-4 py-1 rounded-lg border-2 border-accent text-accent hover:bg-accent hover:text-neutral-800 duration-300">Visit <ArrowUpRight /></a>
       </>
     ),
     mediaURLs: ["/projects/culture-study/01.jpeg", "/projects/culture-study/02.jpeg", "/projects/culture-study/03.jpeg"],
