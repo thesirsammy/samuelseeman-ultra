@@ -1,7 +1,9 @@
-import Image from "next/image";
 import { Newspaper, Linkedin, File, AtSign, CircleUserRound, Github } from 'lucide-react';
 import { Link } from "next-view-transitions";
 import { Magnetic } from "@/components/ui/magnetic";
+
+// Uncomment line below if using Image instead of video
+// import Image from "next/image";
 
 export default function Home() {
   return (
