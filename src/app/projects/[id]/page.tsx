@@ -2,7 +2,7 @@ import { getProject, projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { ArrowLeftIcon } from "lucide-react";
-import { Link } from "next-view-transitions";
+import Link from "next/link";
 
 export default async function ProjectPage({ params }: { params: Promise<{ id: string }> }) {
   const project = getProject((await params).id);
@@ -26,10 +26,6 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             width={500}
             height={300}
             className="rounded-lg mt-4 object-cover"
-            style={{ 
-              viewTransitionName: `project-${project.id}-image`,
-              aspectRatio: '16/9'
-            }}
             priority={true}
           />
           <div className="flex flex-col gap-4 prose prose-invert max-w-none">

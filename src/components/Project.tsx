@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react"
 import Image from "next/image"
-import { Link } from "next-view-transitions";
+import Link from "next/link";
 
 export default function Project({ id, imageURL, imageAlt, isImageFirst, title, date, desc, skills, url}: {id: string, imageURL: string, imageAlt: string, isImageFirst: boolean, title: string, date: string, desc: string, skills: Array<string>, url: string}) {
   let skillsString = "";
@@ -18,10 +18,6 @@ export default function Project({ id, imageURL, imageAlt, isImageFirst, title, d
           alt={imageAlt}
           className="rounded-lg object-cover w-full"
           priority={true}
-          style={{ 
-            viewTransitionName: `project-${id}-image`,
-            aspectRatio: '16/9'
-          }}
         />
       </div>
       <div className="flex flex-col gap-3 justify-around w-full lg:w-1/2">

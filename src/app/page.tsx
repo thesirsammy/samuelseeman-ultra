@@ -1,5 +1,5 @@
 import { Newspaper, Linkedin, File, AtSign, CircleUserRound, Github } from 'lucide-react';
-import { Link } from "next-view-transitions";
+import Link from 'next/link';
 import { Magnetic } from "@/components/ui/magnetic";
 
 // Uncomment line below if using Image instead of video

@@ -1,6 +1,6 @@
 'use client';
 
-import { Link } from "next-view-transitions";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -8,9 +8,9 @@ export default function Navbar() {
 
   return (
     <div className="lg:fixed block w-full z-50 bg-neutral-900 bg-opacity-0 backdrop-blur-sm bg-gradient-to-t from-[#00000000] to-black">
-      <div className={`flex flex-col md:flex-row justify-between items-center ${(pathname.slice(0, 9) !== "/") ? "py-5 px-10" : " py-12 px-16"}`}>
-        <Link href="/" className={`font-display text-3xl font-bold ${(pathname.slice(0, 9) !== "/") ? "text-xl" : "text-3xl"}`} style={{ viewTransitionName: 'nav-header'}}>samuelseeman</Link>
-        <nav className="flex sm:justify-center space-x-4 group" style={{ viewTransitionName: 'nav'}}>
+      <div className={`flex flex-col md:flex-row justify-between items-center py-12 px-16`}>
+        <Link href="/" className={`font-display text-3xl font-bold text-3xl`}>samuelseeman</Link>
+        <nav className="flex sm:justify-center space-x-4 group">
           {[
             ['Home', '/'],
             ['About', '/about'],
