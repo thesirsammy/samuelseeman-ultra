@@ -30,7 +30,7 @@ export default function Home() {
           />
         </InView> */}
 
-        <video width="150" height={150} autoPlay muted loop playsInline preload="" className="md:rounded-full rounded-lg shadow-xl block">
+        <video poster="/placeholder.jpeg" width="150" height={150} autoPlay muted loop playsInline preload="" className="md:rounded-full rounded-lg shadow-xl block">
           <source src="/profile.mp4" type="video/mp4" />
           Your browser dows not support the video tag.
         </video>
