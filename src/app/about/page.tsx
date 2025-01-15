@@ -32,7 +32,7 @@ export default function Page() {
             world of Wordpress, which led me to self-hosting, which in turn dropped me into the grand and 
             glorious world of zeros and ones.</p>
           <Magnetic>
-            <Image draggable={false} src="/about/boat.jpg" width={1000} height={0} alt="Me in a boat" className="md:block hidden border-accent shadow-lg shadow-neutral-700 border-4 rounded-xl float-right hover:cursor-grab"/>
+            <Image draggable={false} src="/about/boat.jpg" width={1000} height={0} alt="Me in a boat" className="md:block hidden border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl float-right hover:cursor-grab"/>
           </Magnetic>
         </div>
         <br /><p>That experience inspired me to love learning for its own sake–I discovered that I had interests 
@@ -40,13 +40,13 @@ export default function Page() {
           led me to pursue a degree in Computer Engineering.</p>
         <AnimatedGroup className="flex justify-center gap-5 items-center my-4 group" preset="scale">
           <Magnetic>
-            <Image draggable={false} src="/about/suit.jpg" width={180} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-xl hover:cursor-grab hover:-rotate-3 hover:-translate-x-4 duration-300"/>
+            <Image draggable={false} src="/about/suit.jpg" width={180} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:-rotate-3 hover:-translate-x-4 duration-300"/>
           </Magnetic>
           <Magnetic>
-            <Image draggable={false} src="/about/mc.jpg" width={180} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-xl hover:cursor-grab rotate-0 hover:-translate-y-7 duration-500"/>
+            <Image draggable={false} src="/about/mc.jpg" width={180} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab rotate-0 hover:-translate-y-7 duration-500"/>
           </Magnetic>
           <Magnetic>
-            <Image draggable={false} src="/about/theater.jpg" width={160} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-xl hover:cursor-grab hover:rotate-3 hover:translate-x-4 duration-300"/>
+            <Image draggable={false} src="/about/theater.jpg" width={160} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:rotate-3 hover:translate-x-4 duration-300"/>
           </Magnetic>
         </AnimatedGroup>
         <p>Outside of the classroom and coding, I follow a wide variety of activities such as theater, graphic design, 

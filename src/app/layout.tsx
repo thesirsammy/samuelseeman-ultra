@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Dock from "@/components/Dock";
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import { ViewTransitions } from 'next-view-transitions'
 
 const funnelDisplay = Funnel_Display({
   variable: "--font-funnel-display",
@@ -27,19 +27,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ViewTransitions>
+      <html lang="en">
+        <body
+          className={`${funnelDisplay.variable} ${DMSans.variable} bg-neutral-900 text-white no-scrollbar w-full`}
+        >
 
-    <html lang="en">
-      <body
-        className={`${funnelDisplay.variable} ${DMSans.variable} bg-neutral-900 text-white no-scrollbar w-full`}
-      >
-        <Navbar />
+          <Navbar />
           
-        {children}
+          {children}
 
-        <Dock />
-
-        <SpeedInsights />
-      </body>
-    </html>
+          <Dock />
+          <SpeedInsights />
+        </body>
+      </html>
+    </ViewTransitions>
   );
 }

@@ -1,13 +1,13 @@
 'use client';
 
-import Link from "next/link"
+import { Link } from "next-view-transitions";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="lg:fixed block w-full z-50 bg-neutral-900 bg-opacity-30 backdrop-blur-sm bg-gradient-to-t from-[#00000000] to-black">
+    <div className="lg:fixed block w-full z-50 bg-neutral-900 bg-opacity-0 backdrop-blur-sm bg-gradient-to-t from-[#00000000] to-black">
       <div className="flex flex-col md:flex-row justify-between px-10 py-5">
         <Link href="/" className='font-display text-3xl font-bold'>samuelseeman</Link>
         <nav className="flex sm:justify-center space-x-4 group">
