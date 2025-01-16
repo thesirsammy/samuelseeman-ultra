@@ -1,4 +1,4 @@
-import { Newspaper, Linkedin, File, AtSign, CircleUserRound, Github } from 'lucide-react';
+import { Newspaper, Linkedin, File, AtSign, CircleUserRound, Github, HammerIcon } from 'lucide-react';
 import Link from 'next/link';
 import { Magnetic } from "@/components/ui/magnetic";
 
@@ -7,8 +7,8 @@ import { Magnetic } from "@/components/ui/magnetic";
 
 export default function Home() {
   return (
-    <div className="flex justify-center font-body">
-      <div className="md:my-36 flex flex-col items-center justify-center max-w-[768px]">
+    <div className="flex justify-center font-body md:h-screen">
+      <div className="flex flex-col items-center justify-center">
         <div className="flex flex-wrap gap-6 md:justify-between justify-center items-center py-10 px-10 bg-neutral-800 rounded-lg w-full z-10 shadow-xl">
         
         {/* Optional Image, must comment out or delete video tag if you're using this */}
@@ -50,24 +50,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-accent text-neutral-800 w-[96%] pt-11 pb-6 font-display text-lg flex justify-center md:gap-6 sm:gap-2 -mt-6 hover:-mt-5 mb-8 hover:mb-7 duration-200 rounded-b-lg underline-offset-4">
-        <Link href="/about" className="flex gap-1 items-center hover:underline duration-200">{<CircleUserRound size={16} className="opacity-0 md:opacity-100"/>} About</Link>
-        <a href="https://read.cv/samuelseeman" target="_blank" className="flex gap-1 items-center hover:underline duration-200">{<Newspaper size={16} className="opacity-0 md:opacity-100"/>} Read.cv</a>
-        <a href="https://github.com/thesirsammy" target="_blank" className="flex gap-1 items-center hover:underline duration-200">{<Github size={16} className="opacity-0 md:opacity-100"/>} Github</a>
-        <a href="mailto:hi@samuelseeman.com" className="flex gap-1 items-center hover:underline duration-200">{<AtSign size={16} className="opacity-0 md:opacity-100"/>} Email</a>
-      </div>
-
-      <div className="font-body md:text-lg text-md mx-5">
-        <p>Studying Computer Engineering, Mathematics, and Business at the University of Alabama.</p>
-        <br />
-        <p>Learning about circuts and electrical wizardry in class + coding, graphic design, and social media management on my own. 
-          I&apos;m also into photography, frisbee, and theater.
-        </p>
-        <br />
-        <p>Outside of academics, you can find me giving back to my community by joining (and leading) 
-          different outreach programs, such as nursing home and youth ministries. Check out my <Link href="/about" className="text-accent hover:text-accent-hover">about</Link> page to learn more.
-        </p>
-        <div className="md:h-[200px]"></div>
+      <div className="bg-accent text-neutral-800 w-[96%] pt-11 pb-6 font-display text-lg flex justify-center md:gap-6 gap-4 -mt-6 hover:-mt-5 mb-8 hover:mb-7 duration-200 rounded-b-lg underline-offset-4">
+        <Link href="/about" className="md:flex hidden gap-1 items-center hover:underline duration-200">{<CircleUserRound size={16}/>} About</Link>
+        <Link href="/projects" className="md:flex hidden gap-1 items-center hover:underline duration-200">{<HammerIcon size={16}/>} Projects</Link>
+        <a href="https://read.cv/samuelseeman" target="_blank" className="flex gap-1 items-center hover:underline duration-200">{<Newspaper size={16}/>} Read.cv</a>
+        <a href="https://github.com/thesirsammy" target="_blank" className="flex gap-1 items-center hover:underline duration-200">{<Github size={16}/>} Github</a>
+        <a href="mailto:hi@samuelseeman.com" className="flex gap-1 items-center hover:underline duration-200">{<AtSign size={16}/>} Email</a>
       </div>
     </div>
   </div>

@@ -5,55 +5,47 @@ import { TextLoop } from "@/components/ui/text-loop"
 import Image from "next/image"
 import "../globals.css"
 import { AnimatedGroup } from "@/components/ui/animated-group";
+import Link from "next/link";
 
 export default function Page() {
   return (
     <div className="flex justify-center font-body md:pb-[20vh]">
-      <div className="md:mt-32 mt-8 md:max-w-[650px] max-w-[95vw] md:text-[18px] text-[16px]">
+      <div className="md:mt-32 mt-8 md:max-w-[750px] max-w-[95vw] md:text-[18px] text-[16px]">
         <div className="flex items-end mb-4">
-          <div className="font-display text-4xl font-bold text-accent mr-6">About</div>
-          <TextLoop className='text-neutral-400' transition={{
-            type: 'spring',
-            stiffness: 900,
-            damping: 80,
-            mass: 10,
-          }}>
-            <span>programmer</span>
-            <span>designer</span>
-            <span>writer</span>
-            <span>photographer</span>
-          </TextLoop>
+          <div className="font-display text-4xl font-bold text-accent mr-6">About <span className="font-body font-normal text-lg text-neutral-400 ml-4">{"whoami"}</span></div>
         </div>
-        <p>I&apos;m Samuel Seeman, a student at the University of Alabama studying Computer Engineering. 
+        <p>Hey there! I&apos;m Sam Seeman, a student at the University of Alabama studying Computer Engineering. 
         I&apos;m originally from Ft. Lauderdale, Florida.</p> <br />
         <div className="flex gap-10">
-          <p>I started my online journey at the age of 14 when I figured out how to set up my own business after I launched
-            <a href="https://savvytechsupport.com" target="_blank" className="text-accent hover:text-accent-hover duration-200"> SavvyTech Support</a>, a small tech support service. This seemingly small task propelled me into the 
-            world of Wordpress, which led me to self-hosting, which in turn dropped me into the grand and 
-            glorious world of zeros and ones.</p>
+          <p>I started my online journey at the age of 14 when I launched
+            <a href="https://savvytechsupport.com" target="_blank" className="text-accent hover:text-accent-hover duration-200"> SavvyTech Support</a>, a small tech support service. At the time, all I wanted was to have my own business with a fancy 
+            new domain all to myself. Little did I know that this seemingly small task would launch me down the rabbit hole of Wordpress, HTML, self-hosting, and eventually into the world of computer science. From that one little idea grew a passion
+            for so much more.</p>
           <Magnetic>
-            <Image draggable={false} src="/about/boat.jpg" width={1000} height={0} alt="Me in a boat" className="md:block hidden border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl float-right hover:cursor-grab"/>
+            <Image draggable={false} src="/about/boat.jpg" width={900} height={0} alt="Me in a boat" className="md:block hidden border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl float-right hover:cursor-grab"/>
           </Magnetic>
         </div>
-        <br /><p>That experience inspired me to love learning for its own sake–I discovered that I had interests 
-          and passions I cared about, not just ones that were thrown at me in school. That introduction with programming got he hooked, and
-          led me to pursue a degree in Computer Engineering.</p>
-        <AnimatedGroup className="flex justify-center gap-5 items-center my-4 group" preset="scale">
+        <br /><p>This first experience of many inspired me to love learning for its own sake–I discovered that I had interests 
+          and passions I cared about, not just ones that were thrown at me in school. That introduction with programming got me hooked, and
+          eventually ended up in my pursuit of a Computer Engineering degree.</p>
+        <AnimatedGroup className="flex justify-center gap-2 md:gap-5 items-center my-4 group" preset="scale">
           <Magnetic>
-            <Image draggable={false} src="/about/suit.jpg" width={180} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:-rotate-3 hover:-translate-x-4 duration-300"/>
+            <Image draggable={false} src="/about/suit.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:-rotate-3 hover:-translate-x-4 duration-300"/>
           </Magnetic>
           <Magnetic>
-            <Image draggable={false} src="/about/mc.jpg" width={180} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab rotate-0 hover:-translate-y-7 duration-500"/>
+            <Image draggable={false} src="/about/mc.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab rotate-0 hover:-translate-y-7 duration-500"/>
           </Magnetic>
           <Magnetic>
-            <Image draggable={false} src="/about/theater.jpg" width={160} height={0} alt="Me in a suit" className="md:block hidden group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:rotate-3 hover:translate-x-4 duration-300"/>
+            <Image draggable={false} src="/about/theater.jpg" width={160} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:rotate-3 hover:translate-x-4 duration-300"/>
           </Magnetic>
         </AnimatedGroup>
         <p>Outside of the classroom and coding, I follow a wide variety of activities such as theater, graphic design, 
           politics, paddleboarding, and photography. I think this range of interests reflects the fact that always I try to be a 
-          well-rounded person, pursuing many different areas of interest at once.</p><br />
-        <p>I guess I could be classified as an amature photographer, too. I&apos;ve been slowly getting deeper into 
-          photography–take a look at my photos at my photography website!</p>
+          well-rounded person, pursuing many different areas of interest at once.
+        </p><br />
+        <p>Thanks for stopping by! Make sure you stop by my <Link className="text-accent hover:text-accent-hover" href="/projects">Projects</Link> and <Link className="text-accent hover:text-accent-hover" href="/now">Now</Link> pages before you go. 
+        If you have time, maybe check out my <a className="text-accent hover:text-accent-hover" target="_blank" href="https://photos.samseeman.com">Photography</a> page, or 
+        even take a look at this site&apos;s <a className="text-accent hover:text-accent-hover" target="_blank" href="https://github.com/thesirsammy/samuelseeman-ultra">source code</a> on GitHub!</p>
       </div>
     </div>
   )
