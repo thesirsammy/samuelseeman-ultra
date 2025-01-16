@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowUpRight, Camera, CircleUserRound, GitBranch, Github, Hammer, House, MapPin } from "lucide-react";
+import { Camera, CircleUserRound, Hammer, House, MapPin } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

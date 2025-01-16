@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div className="flex justify-center font-body">
       <div className="flex flex-col md:mt-32 mt-8 md:max-w-[750px] mx-4 md:text-[18px] text-[16px] gap-8">
-        <div className="font-display text-4xl font-bold text-accent">Now <span className="font-body font-normal text-lg text-neutral-400 ml-4">What's happening?</span></div>
+        <div className="font-display text-4xl font-bold text-accent">Now <span className="font-body font-normal text-lg text-neutral-400 ml-4">What&apos;s happening?</span></div>
         <Now 
           date="9/30/24"
           location="Tuscaloosa, AL"

@@ -1,7 +1,6 @@
 'use client';
 
 import { Magnetic } from "@/components/ui/magnetic";
-import { TextLoop } from "@/components/ui/text-loop"
 import Image from "next/image"
 import "../globals.css"
 import { AnimatedGroup } from "@/components/ui/animated-group";
