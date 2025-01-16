@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link";
 
-export default function Project({ id, imageURL, imageAlt, isImageFirst, title, date, desc, skills, url}: {id: string, imageURL: string, imageAlt: string, isImageFirst: boolean, title: string, date: string, desc: string, skills: Array<string>, url: string}) {
+export default function Project({ imageURL, imageAlt, isImageFirst, title, date, desc, skills, url}: {imageURL: string, imageAlt: string, isImageFirst: boolean, title: string, date: string, desc: string, skills: Array<string>, url: string}) {
   let skillsString = "";
   skills.forEach((skill) => (skillsString += skill + " • "));
   skillsString = skillsString.slice(0, -2);
