@@ -15,27 +15,25 @@ export default function Page() {
         </div>
         <p>Hey there! I&apos;m Sam Seeman, a student at the University of Alabama studying Computer Engineering. 
         I&apos;m originally from Ft. Lauderdale, Florida.</p> <br />
-        <div className="flex gap-10">
-          <p>I started my online journey at the age of 14 when I launched
+        <div className="flex md:flex-nowrap flex-wrap gap-6 md:items-center md:justify-between justify-center">
+          <p className="">I started my online journey at the age of 14 when I launched
             <a href="https://savvytechsupport.com" target="_blank" className="text-accent hover:text-accent-hover duration-200"> SavvyTech Support</a>, a small tech support service. At the time, all I wanted was to have my own business with a fancy 
             new domain all to myself. Little did I know that this seemingly small task would launch me down the rabbit hole of Wordpress, HTML, self-hosting, and eventually into the world of computer science. From that one little idea grew a passion
             for so much more.</p>
-          <Magnetic>
-            <Image draggable={false} src="/about/boat.jpg" width={900} height={0} alt="Me in a boat" className="md:block hidden border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl float-right hover:cursor-grab"/>
-          </Magnetic>
+          <Image draggable={false} src="/about/boat.jpg" width={200} height={0} alt="Me in a boat" className="block border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab"/>
         </div>
         <br /><p>This first experience of many inspired me to love learning for its own sake–I discovered that I had interests 
           and passions I cared about, not just ones that were thrown at me in school. That introduction with programming got me hooked, and
           eventually ended up in my pursuit of a Computer Engineering degree.</p>
         <AnimatedGroup className="flex justify-center gap-2 md:gap-5 items-center my-4 group" preset="scale">
           <Magnetic>
-            <Image draggable={false} src="/about/suit.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:-rotate-3 hover:-translate-x-4 duration-300"/>
+            <Image draggable={false} src="/about/suit.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:-rotate-3 hover:-translate-x-4 duration-300"/>
           </Magnetic>
           <Magnetic>
-            <Image draggable={false} src="/about/mc.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab rotate-0 hover:-translate-y-7 duration-500"/>
+            <Image draggable={false} src="/about/mc.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab rotate-0 hover:-translate-y-7 duration-500"/>
           </Magnetic>
           <Magnetic>
-            <Image draggable={false} src="/about/theater.jpg" width={160} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-accent shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:rotate-3 hover:translate-x-4 duration-300"/>
+            <Image draggable={false} src="/about/theater.jpg" width={160} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:rotate-3 hover:translate-x-4 duration-300"/>
           </Magnetic>
         </AnimatedGroup>
         <p>Outside of the classroom and coding, I follow a wide variety of activities such as theater, graphic design, 

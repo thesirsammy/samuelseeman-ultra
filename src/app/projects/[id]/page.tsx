@@ -28,7 +28,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ id: st
             className="rounded-lg mt-4 object-cover"
             priority={true}
           />
-          <div className="flex flex-col gap-4 prose prose-invert max-w-none">
+          <div className="flex flex-col gap-4 prose prose-invert">
             <div className="flex gap-2 flex-wrap">
               {project.skills.map((skill) => (
                 <span key={skill} className="bg-neutral-800 px-3 py-1 rounded-full text-sm font-display">

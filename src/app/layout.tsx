@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${funnelDisplay.variable} ${DMSans.variable} bg-neutral-900 text-white no-scrollbar w-full`}
+        className={`${funnelDisplay.variable} ${DMSans.variable} bg-neutral-950 text-white no-scrollbar w-full`}
       >
 
         <Navbar />
