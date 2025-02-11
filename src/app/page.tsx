@@ -44,7 +44,7 @@ export default function Home() {
               <a href="https://linkedin.com/in/samuelseeman" className="hover:text-accent hover:border-accent duration-300 flex gap-1 items-center border-2 px-4 py-1 rounded-lg">{<Linkedin size={16} />} Linkedin</a>
             </Magnetic>
             <Magnetic>
-              <a href="/resume.pdf" target="_blank" className="flex gap-1 items-center px-4 py-1 rounded-lg border-2 border-accent text-accent hover:bg-accent hover:text-neutral-800 duration-300">{<File size={16}/>} Resume</a>
+              <a href="https://docs.google.com/document/d/1Byuq7fLKB33b0fyHn_R8SqtbUxxIWcBI_zaBrr1enMY/edit?usp=sharing" target="_blank" className="flex gap-1 items-center px-4 py-1 rounded-lg border-2 border-accent text-accent hover:bg-accent hover:text-neutral-800 duration-300">{<File size={16}/>} Resume</a>
             </Magnetic>
           </div>
         </div>
