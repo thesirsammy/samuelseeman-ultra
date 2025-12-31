@@ -11,10 +11,10 @@ export default function Page() {
           location="Jarabacoa, Dominican Republic"
           text={
             <>
-              I'm in the Dominican Republic this summer as an intern for Mission of Hope, a Caribbean mission trip program. Over the course 
+              I&apos;m in the Dominican Republic this summer as an intern for Mission of Hope, a Caribbean mission trip program. Over the course 
               of two months I get to serve with 9 teams, spending a week with each in service and ministry to different Dominican communities, connecting
-              through local churchs and native translators. Through games, personal interactions, home repairs, and more, we're seeing hundreds of lives changed. 
-              With the internet quality we have here it's putting a hold on programming, but doing this kind of hands-on service is a nice break
+              through local churchs and native translators. Through games, personal interactions, home repairs, and more, we&apos;re seeing hundreds of lives changed. 
+              With the internet quality we have here it&apos;s putting a hold on programming, but doing this kind of hands-on service is a nice break
               from the usual, and feels really refreshing. 
             </>
           }
