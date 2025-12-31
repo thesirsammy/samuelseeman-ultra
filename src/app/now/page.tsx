@@ -3,8 +3,23 @@ import Now from "@/components/Now";
 export default function Page() {
   return (
     <div className="flex justify-center font-body">
-      <div className="flex flex-col md:mt-32 mt-8 md:max-w-[750px] mx-4 md:text-[18px] text-[16px] gap-8">
+      <div className="flex flex-col md:mt-32 mt-8 md:mb-32 mb-8 md:max-w-[750px] mx-4 md:text-[18px] text-[16px] gap-8">
         <div className="font-display text-4xl font-bold text-accent">Now <span className="font-body font-normal text-lg text-neutral-400 ml-4">What&apos;s happening?</span></div>
+        
+        <Now 
+          date="6/02/25"
+          location="Jarabacoa, Dominican Republic"
+          text={
+            <>
+              I'm in the Dominican Republic this summer as an intern for Mission of Hope, a Caribbean mission trip program. Over the course 
+              of two months I get to serve with 9 teams, spending a week with each in service and ministry to different Dominican communities, connecting
+              through local churchs and native translators. Through games, personal interactions, home repairs, and more, we're seeing hundreds of lives changed. 
+              With the internet quality we have here it's putting a hold on programming, but doing this kind of hands-on service is a nice break
+              from the usual, and feels really refreshing. 
+            </>
+          }
+        />
+        
         <Now 
           date="9/30/24"
           location="Tuscaloosa, AL"

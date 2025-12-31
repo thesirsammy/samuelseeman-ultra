@@ -26,15 +26,9 @@ export default function Page() {
           and passions I cared about, not just ones that were thrown at me in school. That introduction with programming got me hooked, and
           eventually ended up in my pursuit of a Computer Engineering degree.</p>
         <AnimatedGroup className="flex justify-center gap-2 md:gap-5 items-center my-4 group" preset="scale">
-          <Magnetic>
-            <Image draggable={false} src="/about/suit.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:-rotate-3 hover:-translate-x-4 duration-300"/>
-          </Magnetic>
-          <Magnetic>
-            <Image draggable={false} src="/about/mc.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab rotate-0 hover:-translate-y-7 duration-500"/>
-          </Magnetic>
-          <Magnetic>
-            <Image draggable={false} src="/about/theater.jpg" width={160} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:rotate-3 hover:translate-x-4 duration-300"/>
-          </Magnetic>
+          <Image draggable={false} src="/about/suit.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:-rotate-3 hover:-translate-x-3 duration-300"/>
+          <Image draggable={false} src="/about/mc.jpg" width={180} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab rotate-0 hover:-translate-y-3 duration-500"/>
+          <Image draggable={false} src="/about/theater.jpg" width={160} height={0} alt="Me in a suit" className="group-hover:grayscale hover:!filter-none border-neutral-700 shadow-lg shadow-neutral-700 border-4 rounded-3xl hover:cursor-grab hover:rotate-3 hover:translate-x-3 duration-300"/>
         </AnimatedGroup>
         <p>Outside of the classroom and coding, I follow a wide variety of activities such as theater, graphic design, 
           politics, paddleboarding, and photography. I think this range of interests reflects the fact that always I try to be a 
@@ -42,7 +36,7 @@ export default function Page() {
         </p><br />
         <p>Thanks for stopping by! Make sure you stop by my <Link className="text-accent hover:text-accent-hover" href="/projects">Projects</Link> and <Link className="text-accent hover:text-accent-hover" href="/now">Now</Link> pages before you go. 
         If you have time, maybe check out my <a className="text-accent hover:text-accent-hover" target="_blank" href="https://photos.samseeman.com">Photography</a> page, or 
-        even take a look at this site&apos;s <a className="text-accent hover:text-accent-hover" target="_blank" href="https://github.com/thesirsammy/samuelseeman-ultra">source code</a> on GitHub!</p>
+        even take a look at this site&apos;s <a className="text-accent hover:text-accent-hover" target="_blank" href="https://github.com/thesirsammy/samuelseeman-ultra">source code</a> on GitHub.</p>
       </div>
     </div>
   )
